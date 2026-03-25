@@ -1,0 +1,15 @@
+public class FuncionarioCLT extends Funcionario {
+    private double beneficios;
+
+    public FuncionarioCLT(String nome, double salario, double beneficios) {
+        super(nome, salario);
+        this.beneficios = beneficios;
+    }
+
+    @Override
+    public void exibirDados() {
+        super.exibirDados(); 
+        System.out.println("Benefícios:  " + beneficios);
+        System.out.println("Pagamento total:  " + (getSalario() + beneficios));
+    }
+}

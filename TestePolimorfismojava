@@ -1,0 +1,15 @@
+public class TestePolimorfismo {
+    public static void main(String[] args) {
+        Funcionario f1 = new FuncionarioCLT("Ana", 5000, 800);
+        Funcionario f2 = new Estagiario("Carlos", 1500);
+        Funcionario f3 = new Freelancer("Marcos", 60, 80);
+
+        Funcionario[] funcionarios = {f1, f2, f3};
+
+        System.out.println("=== Folha de Pagamento TechPlus Solutions ===");
+        for (Funcionario f : funcionarios) {
+            f.exibirDados(); 
+        }
+    }
+}
+

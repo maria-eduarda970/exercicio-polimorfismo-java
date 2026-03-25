@@ -1,0 +1,11 @@
+public class Estagiario extends Funcionario {
+
+    public Estagiario(String nome, double salario) {
+        super(nome, salario); 
+    }
+
+    public void exibirPagamento() {
+        System.out.println("Nome: " + getNome());
+        System.out.println("Bolsa de Estágio: R$ " + getSalario());
+    }
+}

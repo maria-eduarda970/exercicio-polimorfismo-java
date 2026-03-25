@@ -1,0 +1,25 @@
+public class Freelancer extends Funcionario {
+    private double valorHora;
+    private int horasTrabalhadas;
+
+    public Freelancer(String nome, double valorHora, int horasTrabalhadas) {
+        super(nome, 0);
+        this.valorHora = valorHora;
+        this.horasTrabalhadas = horasTrabalhadas;
+    }
+
+    @Override
+    public double getSalario() {
+        return valorHora * horasTrabalhadas;
+    }
+
+    @Override
+    public void exibirDados() {
+        System.out.println("Nome: " + getNome());
+        System.out.println("Valor por hora: R$ " + valorHora);
+        System.out.println("Horas trabalhadas: " + horasTrabalhadas);
+        System.out.println("Pagamento total: R$ " + getSalario());
+    }
+}
+
+
